@@ -15,8 +15,14 @@ Currently, two official plugins are available:
 
 # Bootstrap
 
-- npm install bootstrap
+- npm install react-bootstrap bootstrap
 
 # Sass
 
 - npm install -D sass-embedded
+
+# Rooter
+
+- npm install react-router
+- npm install react-router-dom
+- npm install react-router-dom localforage match-sorter sort-by
