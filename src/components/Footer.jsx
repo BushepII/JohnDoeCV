@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <>
-        <footer className='container-fluid bg-body-tertiary py-4 px-0'>
+        <footer className='container-fluid py-4 px-0'>
             <section className='container-fluid'>
                 <section className='row justify-content-around px-0 py-4'>
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
@@ -16,8 +16,8 @@ function Footer() {
                         </p>
                         <a href="tel:+33620304050" className='pb-4'>Téléphone : 06 20 30 40 50</a>
                         <a href="#" className='social-picture-link'><img src="src\assets\github_icon.png" alt="" className='social-picture'/></a>
-                        <a href="#" className='social-picture-link'><img src="src\assets\twitter_icon.png" alt="" className='social-picture'/></a>
-                        <a href="#" className='social-picture-link'><img src="src\assets\linkedin_icon.png" alt="" className='social-picture'/></a>
+                        <a href="https://x.com/?lang=fr&mx=2" target='_blank' className='social-picture-link'><img src="src\assets\twitter_icon.png" alt="" className='social-picture'/></a>
+                        <a href="https://fr.linkedin.com/" target="_blank" className='social-picture-link'><img src="src\assets\linkedin_icon.png" alt="" className='social-picture'/></a>
                     </section>
 
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
@@ -44,8 +44,8 @@ function Footer() {
                     </section>
                 </section>
             </section>
-            <section className='row text-center bg-dark text-bg-dark m-0'>
-                <h4 className='p-4 m-0'>&copy; Designed by John Doe</h4>
+            <section className='row text-center bg-dark m-0'>
+                <h4 id="copyright" className='p-4 m-0'>&copy; Designed by John Doe</h4>
             </section>
             
         </footer>

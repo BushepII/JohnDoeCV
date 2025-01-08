@@ -1,3 +1,7 @@
+header {
+    position: fixed;
+}
+
 #navbarSupportedContent {
     justify-content: end;
 }
