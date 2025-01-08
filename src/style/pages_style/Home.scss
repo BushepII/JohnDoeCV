@@ -1,0 +1,72 @@
+#about {
+    background-color: white;
+    border-radius: 0.5%;
+    box-shadow: 1px 1px 20px grey;
+    
+}
+
+.presentation {
+    @media (max-width: 768px){
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+            url('../../assets/hero-bg-mobile.jpg') no-repeat 35% 0 / cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    @media (max-width: 992px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+            url('../../assets/hero-bg-tablette.jpg') no-repeat 35% 0 / cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    @media (min-width: 992px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+            url('../../assets/hero-bg.jpg') no-repeat 35% 0 / cover;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.presentation h1 {
+    color: white;
+}
+
+.presentation h2 {
+    color: white;
+}
+
+hr {
+    color: #0d6efd;
+    width: 100%;
+    border: 1px solid #0d6efd;
+}
+
+p {
+    margin: 1em;
+}
+
+.progress-html5{
+    width: 90%;
+    background-color: #DC3546;
+}
+
+.progress-css3{
+    width: 80%;
+    background-color: #0DCAF0;
+}
+
+.progress-javascript{
+    width: 70%;
+    background-color: #FEC107;
+}
+
+.progress-php{
+    width: 60%;
+    background-color: #188754;
+}
+
+.progress-react{
+    width: 50%;
+    background-color: #0D6EFD;
+}
