@@ -1,0 +1,23 @@
+a {
+    color: black;
+    font-weight: normal;
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+.social-picture-link {
+    display: inline;
+    width: 2em;
+    height: 2em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.social-picture {
+    width: auto;
+    height: 2em;
+    object-fit: cover;
+}
