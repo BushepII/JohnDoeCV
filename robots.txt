@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /legal-mentions
+Disallow: /error404
+Disallow: /github-infos

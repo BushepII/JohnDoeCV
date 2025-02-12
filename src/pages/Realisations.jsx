@@ -19,15 +19,15 @@ const Realisations = () => {
             <section className="container-fluid mt-4" id="realisations">
                 <section className="row text-center">
                     <section className="col-12">
-                        <h1>Portfolio</h1>
+                        <h1>PORTFOLIO</h1>
                         <p>Voici quelques-unes de mes réalisations</p>
-                        <hr className="mx-auto"/>
+                        <hr className="border border-primary border-2 col-2 mx-auto"/>
                     </section>
                 </section>
                 <section className="row justify-content-center m-4">
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card" id="fresh-food">
+                        <img src={freshFoodImage} className="card-img-top" alt="..."/>
                         <section className="card-body p-0">
-                            <img src={freshFoodImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column align-items-center m-4">
                                 <h2 className="card-title">Fresh food</h2>
                                 <p className="card-text">Réalisation d&apos;un site avec commande en ligne.</p>
@@ -37,8 +37,8 @@ const Realisations = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card" id="akira">
+                        <img src={japaneseRestaurantImage} className="card-img-top" alt="..."/>
                         <section className="card-body p-0">
-                            <img src={japaneseRestaurantImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column align-items-center m-4">
                                 <h2 className="card-title">Restaurant Akira</h2>
                                 <p className="card-text">Réalisation d&apos;un site vitrine.</p>
@@ -48,8 +48,8 @@ const Realisations = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card" id="good-space">
+                        <img src={careSpaceImage} className="card-img-top" alt="..."/>
                         <section className="card-body p-0">
-                            <img src={careSpaceImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column align-items-center m-4">
                                 <h2 className="card-title">Espace bien-être</h2>
                                 <p className="card-text">Réalisation d&apos;un site vitrine pour un patricien de bien-être.</p>

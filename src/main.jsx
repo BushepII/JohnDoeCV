@@ -8,6 +8,7 @@ import Contact from './pages/Contact.jsx'
 import Blog from './pages/Blog.jsx'
 import Realisations from './pages/Realisations.jsx'
 import Services from './pages/Services.jsx'
+import LegalMentions from './pages/legalMentions.jsx'
 
 import './style/index.css'
 
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path='/blog' element={<Blog />} />
       <Route path='/realisations' element={<Realisations />} />
       <Route path='/services' element={<Services />} />
+      <Route path='/legal-mentions' element={<LegalMentions />} />
     </Route>
   )
 )

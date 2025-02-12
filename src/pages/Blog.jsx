@@ -24,14 +24,14 @@ const Blog = () => {
                     <section className="col-12">
                         <h1>BLOG</h1>
                         <p>Retrouvez ici quelques articles sur le développement web.</p>
-                        <hr className="mx-auto"/>
+                        <hr className="border border-primary border-2 col-2 mx-auto"/>
                     </section>
                 </section>
                 <section className="row justify-content-center m-4">
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card" id="code-website">
-                        <section className="card-body p-0">
-                            <img src={coderImage} className="card-img-top" alt="..."/>
-                            <section className="d-flex flex-column justify-content-evenly m-4">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card h-100 card" id="code-website">
+                        <img src={coderImage} className="card-img-top" alt="..."/>
+                        <section className="card-body p-0 d-flex flex-column flex-grow-1">
+                            <section className="d-flex flex-column justify-content-evenly m-4 flex-grow-1">
                                 <h2 className="card-title">Coder son site en HTML/CSS</h2>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
                                 <a href="#" className="btn btn-primary card-link mt-4">Lire la suite</a>
@@ -40,9 +40,9 @@ const Blog = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card" id="sell-web">
-                        <section className="card-body p-0">
-                            <img src={croissanceImage} className="card-img-top" alt="..."/>
-                            <section className="d-flex flex-column justify-content-evenly m-4">
+                        <img src={croissanceImage} className="card-img-top" alt="..."/>
+                        <section className="card-body p-0 d-flex flex-column flex-grow-1">
+                            <section className="d-flex flex-column justify-content-evenly m-4 flex-grow-1">
                                 <h2 className="card-title">Vendre ses produits sur le web</h2>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
                                 <a href="#" className="btn btn-primary card-link mt-4">Lire la suite</a>
@@ -51,9 +51,9 @@ const Blog = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card" id="google-position">
-                        <section className="card-body p-0">
-                            <img src={googleImage} className="card-img-top" alt="..."/>
-                            <section className="d-flex flex-column justify-content-evenly m-4">
+                        <img src={googleImage} className="card-img-top" alt="..."/>
+                        <section className="card-body p-0 d-flex flex-column flex-grow-1">
+                            <section className="d-flex flex-column justify-content-evenly m-4 flex-grow-1">
                                 <h2 className="card-title">Se positionner sur Google</h2>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
                                 <a href="#" className="btn btn-primary card-link mt-4">Lire la suite</a>
@@ -62,9 +62,9 @@ const Blog = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
-                        <section className="card-body p-0">
-                            <img src={screensImage} className="card-img-top" alt="..."/>
-                            <section className="d-flex flex-column justify-content-evenly m-4">
+                        <img src={screensImage} className="card-img-top" alt="..."/>
+                        <section className="card-body p-0 d-flex flex-column flex-grow-1">
+                            <section className="d-flex flex-column justify-content-evenly m-4 flex-grow-1">
                                 <h2 className="card-title">Coder en responsive design</h2>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
                                 <a href="#" className="btn btn-primary card-link mt-4">Lire la suite</a>
@@ -73,9 +73,9 @@ const Blog = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
-                        <section className="card-body p-0">
-                            <img src={seoImage} className="card-img-top" alt="..."/>
-                            <section className="d-flex flex-column justify-content-evenly m-4">
+                        <img src={seoImage} className="card-img-top" alt="..."/>
+                        <section className="card-body p-0 d-flex flex-column flex-grow-1">
+                            <section className="d-flex flex-column justify-content-evenly m-4 flex-grow-1">
                                 <h2 className="card-title">Techniques de référencement</h2>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
                                 <a href="#" className="btn btn-primary card-link mt-4">Lire la suite</a>
@@ -84,9 +84,9 @@ const Blog = () => {
                         </section>
                     </section>
                     <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
-                        <section className="card-body p-0">
-                            <img src={technosImage} className="card-img-top" alt="..."/>
-                            <section className="d-flex flex-column justify-content-evenly m-4">
+                        <img src={technosImage} className="card-img-top" alt="..."/>
+                        <section className="card-body p-0 d-flex flex-column flex-grow-1">
+                            <section className="d-flex flex-column justify-content-evenly m-4 flex-grow-1">
                                 <h2 className="card-title">Apprendre à coder</h2>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
                                 <a href="#" className="btn btn-primary card-link mt-4">Lire la suite</a>
