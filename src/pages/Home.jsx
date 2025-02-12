@@ -22,11 +22,11 @@ const Home = () => {
                     <section className="col-12 col-md-6 p-5">
                         <h1>À propos</h1>
                         <hr className="blue-line"/>
-                        <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du <strong>développement web</strong>. </p>
+                        <p>Passionné par l&apos;informatique et les nouvelles technologies, j&apos;ai suivi une formation d&apos;<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j&apos;ai pu acquérir des bases solides pour travailler dans le domaine du <strong>développement web</strong>. </p>
                         <br/>
-                        <p>Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de <strong>développeur web full stack</strong>.</p>
+                        <p>Basé à Lyon, je suis en recherche d&apos;une alternance au sein d&apos;une agence digitale pour consolider ma formation de <strong>développeur web full stack</strong>.</p>
                         <br/>
-                        <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.</p>
+                        <p>J&apos;accorde une attention particulière à la qualité du code que j&apos;écris et je respecte les bonnes pratiques du web.</p>
                     </section>
                     <section className="col-12 col-md-6 p-5">
                         <img src={johnDoeAboutPicture} className="img-fluid rounded" alt="" />

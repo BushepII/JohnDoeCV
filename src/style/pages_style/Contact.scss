@@ -1,0 +1,14 @@
+.contact {
+    background: linear-gradient(rgba(0, 105, 255, 0.5), rgba(0, 105, 255, 0.5)), 
+            url('../../assets/contact-bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-card {
+    width: 95%;
+}
+
+iframe {
+    flex-grow: 1;
+}
