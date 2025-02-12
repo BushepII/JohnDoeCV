@@ -11,7 +11,7 @@ const Services = () => {
                 <source srcSet={bannerTablette} type="image/jpg" media="(min-width: 768px)" />
                 <img src={bannerMobile} alt="" className="img-fluid banner" />
             </picture>
-            <section className="container-fluid mt-4">
+            <section className="container-fluid mt-4" id="services">
                 <section className="row text-center">
                     <section className="col-12">
                         <h1>MON OFFRE DE SERVICES</h1>

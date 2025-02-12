@@ -19,7 +19,7 @@ const Blog = () => {
                 <source srcSet={bannerTablette} type="image/jpeg" media="(min-width: 768px)" />
                 <img src={bannerMobile} type="image/jpeg" alt="" className="img-fluid banner"/>
             </picture>
-            <section className="container-fluid mt-4">
+            <section className="container-fluid mt-4" id="blog">
                 <section className="row text-center">
                     <section className="col-12">
                         <h1>BLOG</h1>
@@ -28,7 +28,7 @@ const Blog = () => {
                     </section>
                 </section>
                 <section className="row justify-content-center m-4">
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card" id="code-website">
                         <section className="card-body p-0">
                             <img src={coderImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column justify-content-evenly m-4">
@@ -39,7 +39,7 @@ const Blog = () => {
                             <p className="card-footer">Publié le 22 août 2022</p>
                         </section>
                     </section>
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card" id="sell-web">
                         <section className="card-body p-0">
                             <img src={croissanceImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column justify-content-evenly m-4">
@@ -50,7 +50,7 @@ const Blog = () => {
                             <p className="card-footer">Publié le 20 août 2022</p>
                         </section>
                     </section>
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card" id="google-position">
                         <section className="card-body p-0">
                             <img src={googleImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column justify-content-evenly m-4">
