@@ -53,9 +53,9 @@ function Footer() {
                         <Nav.Item>
                             <Nav.Link href="#" onClick={handleScrollToSection("contact", "contact")}><img src={chevron} alt="" />Me contacter</Nav.Link>
                         </Nav.Item>
-                        {/* <Nav.Item>
-                            <Nav.Link href="#" onClick={handleScrollToSection("", "presentation-home")}><img src={chevron} alt="" />Mentions légales</Nav.Link>
-                        </Nav.Item> */}
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("legal-mentions", "container")}><img src={chevron} alt="" />Mentions légales</Nav.Link>
+                        </Nav.Item>
                     </section>
 
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
