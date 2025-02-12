@@ -10,6 +10,7 @@ import Realisations from './pages/Realisations.jsx'
 import Services from './pages/Services.jsx'
 import LegalMentions from './pages/legalMentions.jsx'
 import GitHub from './pages/GitHub.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 
 import './style/index.css'
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path='/services' element={<Services />} />
       <Route path='/legal-mentions' element={<LegalMentions />} />
       <Route path='/github-infos' element={<GitHub />} />
+      <Route path='*' element={<ErrorPage />} />
     </Route>
   )
 )
