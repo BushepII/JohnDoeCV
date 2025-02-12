@@ -34,7 +34,11 @@ function Footer() {
                             69009 Lyon, France
                         </p>
                         <a href="tel:+33620304050" className='pb-4'>Téléphone : 06 20 30 40 50</a>
-                        <a href="#" className='social-picture-link'><img src="src\assets\github_icon.png" alt="" className='social-picture'/></a>
+                        <Nav.Item className="d-inline">
+                            <Nav.Link href="#" onClick={handleScrollToSection("github-infos", "github")} className='social-picture-link'>
+                                <img src="src\assets\github_icon.png" alt="" className='social-picture'/>
+                            </Nav.Link>
+                        </Nav.Item>
                         <a href="https://x.com/?lang=fr&mx=2" target='_blank' className='social-picture-link'><img src="src\assets\twitter_icon.png" alt="" className='social-picture'/></a>
                         <a href="https://fr.linkedin.com/" target="_blank" className='social-picture-link'><img src="src\assets\linkedin_icon.png" alt="" className='social-picture'/></a>
                     </section>
