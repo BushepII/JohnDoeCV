@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <>
-            <section className="presentation container-fluid d-flex flex-column text-center justify-content-center align-items-center">
+            <section className="presentation container-fluid d-flex flex-column text-center justify-content-center align-items-center" id="presentation-home">
                 <h1 className="mb-3">Bonjour, je suis John Doe</h1>
                 <h2>Développeur web full stack</h2>
                 <button type="button" className="btn btn-primary px-4 m-2" onClick={scrollToSection}>En savoir plus</button>

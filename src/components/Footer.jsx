@@ -1,8 +1,42 @@
 import '../style/components_style/Footer.scss'
-import { Link } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import chevron from '../assets/chevron-right.svg';
 
 function Footer() {
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleAboutClick = (e) => {
+        e.preventDefault(); // Prevent default navigation behavior
+
+        if (location.pathname !== "/") {
+            navigate("/", { replace: true }); // Navigate to the home page first
+        }
+
+        setTimeout(() => {
+            const aboutSection = document.getElementById("about");
+            if(aboutSection) {
+                aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }, 100);
+    };
+
+    const handleHomeClick = (e) => {
+        e.preventDefault(); // Prevent default navigation behavior
+
+        if (location.pathname !== "/") {
+            navigate("/", { replace: true }); // Navigate to the home page first
+        }
+
+        setTimeout(() => {
+            const aboutSection = document.getElementById("presentation-home");
+            if(aboutSection) {
+                aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }, 100);
+    };
 
   return (
     <>
@@ -22,11 +56,21 @@ function Footer() {
 
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
                         <h4>Liens utiles</h4>
-                        <Link to="/"><img src={chevron} alt="" />Accueil</Link>
-                        <Link to="/about"><img src={chevron} alt="" />À propos</Link>
-                        <Link to="/services"><img src={chevron} alt="" />Services</Link>
-                        <Link to="/contact"><img src={chevron} alt="" />Me contacter</Link>
-                        <Link to="/mentions"><img src={chevron} alt="" />Mentions légales</Link>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleHomeClick}><img src={chevron} alt="" />Accueil</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleAboutClick} ><img src={chevron} alt="" />À propos</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={NavLink} to="/services"><img src={chevron} alt="" />Services</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={NavLink} to="/contact"><img src={chevron} alt="" />Me contacter</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={NavLink} to="/mentions"><img src={chevron} alt="" />Mentions légales</Nav.Link>
+                        </Nav.Item>
                     </section>
 
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
