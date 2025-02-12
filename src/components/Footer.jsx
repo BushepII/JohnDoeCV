@@ -1,6 +1,6 @@
 import '../style/components_style/Footer.scss'
 import Nav from 'react-bootstrap/Nav';
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import chevron from '../assets/chevron-right.svg';
 
 function Footer() {
@@ -8,32 +8,17 @@ function Footer() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const handleAboutClick = (e) => {
+    const handleScrollToSection = (pageLink, sectionId) => (e) => {
         e.preventDefault(); // Prevent default navigation behavior
 
-        if (location.pathname !== "/") {
-            navigate("/", { replace: true }); // Navigate to the home page first
+        if (location.pathname !== pageLink) {
+            navigate("/" + pageLink, { replace: true }); // Navigate to the home page first
         }
 
         setTimeout(() => {
-            const aboutSection = document.getElementById("about");
-            if(aboutSection) {
-                aboutSection.scrollIntoView({ behavior: "smooth" });
-            }
-        }, 100);
-    };
-
-    const handleHomeClick = (e) => {
-        e.preventDefault(); // Prevent default navigation behavior
-
-        if (location.pathname !== "/") {
-            navigate("/", { replace: true }); // Navigate to the home page first
-        }
-
-        setTimeout(() => {
-            const aboutSection = document.getElementById("presentation-home");
-            if(aboutSection) {
-                aboutSection.scrollIntoView({ behavior: "smooth" });
+            const targetSection = document.getElementById(sectionId);
+            if(targetSection) {
+                targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
             }
         }, 100);
     };
@@ -57,34 +42,46 @@ function Footer() {
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
                         <h4>Liens utiles</h4>
                         <Nav.Item>
-                            <Nav.Link href="#" onClick={handleHomeClick}><img src={chevron} alt="" />Accueil</Nav.Link>
+                            <Nav.Link href="#" onClick={handleScrollToSection("", "presentation-home")}><img src={chevron} alt="" />Accueil</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#" onClick={handleAboutClick} ><img src={chevron} alt="" />À propos</Nav.Link>
+                            <Nav.Link href="#" onClick={handleScrollToSection("", "about")} ><img src={chevron} alt="" />À propos</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={NavLink} to="/services"><img src={chevron} alt="" />Services</Nav.Link>
+                            <Nav.Link href="#" onClick={handleScrollToSection("services", "services")}><img src={chevron} alt="" />Services</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={NavLink} to="/contact"><img src={chevron} alt="" />Me contacter</Nav.Link>
+                            <Nav.Link href="#" onClick={handleScrollToSection("contact", "contact")}><img src={chevron} alt="" />Me contacter</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link as={NavLink} to="/mentions"><img src={chevron} alt="" />Mentions légales</Nav.Link>
-                        </Nav.Item>
+                        {/* <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("", "presentation-home")}><img src={chevron} alt="" />Mentions légales</Nav.Link>
+                        </Nav.Item> */}
                     </section>
 
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
                         <h4>Mes dernières réalisations</h4>
-                        <a href="#"><img src={chevron} alt="" />Fresh food</a>
-                        <a href="#"><img src={chevron} alt="" />Restaurant Akira</a>
-                        <a href="#"><img src={chevron} alt="" />Espace bien-être</a>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("realisations", "fresh-food")}><img src={chevron} alt="" />Fresh food</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("realisations", "akira")}><img src={chevron} alt="" />Restaurant Akira</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("realisations", "good-space")}><img src={chevron} alt="" />Espace bien-être</Nav.Link>
+                        </Nav.Item>
                     </section>
 
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
                         <h4>Mes derniers articles</h4>
-                        <a href="#"><img src={chevron} alt="" />Coder son site en HTML/CSS</a>
-                        <a href="#"><img src={chevron} alt="" />Vendre ses produits sur le web</a>
-                        <a href="#"><img src={chevron} alt="" />Se positionner sur Google</a>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("blog", "code-website")}><img src={chevron} alt="" />Coder son site en HTML/CSS</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("blog", "sell-web")}><img src={chevron} alt="" />Vendre ses produits sur le web</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#" onClick={handleScrollToSection("blog", "google-position")}><img src={chevron} alt="" />Se positionner sur Google</Nav.Link>
+                        </Nav.Item>
                     </section>
                 </section>
             </section>

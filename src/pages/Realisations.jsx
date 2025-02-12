@@ -16,7 +16,7 @@ const Realisations = () => {
                 <source srcSet={bannerTablette} type="image/jpeg" media="(min-width: 768px)" />
                 <img src={bannerMobile} type="image/jpeg" alt="" className="img-fluid banner"/>
             </picture>
-            <section className="container-fluid mt-4">
+            <section className="container-fluid mt-4" id="realisations">
                 <section className="row text-center">
                     <section className="col-12">
                         <h1>Portfolio</h1>
@@ -25,7 +25,7 @@ const Realisations = () => {
                     </section>
                 </section>
                 <section className="row justify-content-center m-4">
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card" id="fresh-food">
                         <section className="card-body p-0">
                             <img src={freshFoodImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column align-items-center m-4">
@@ -36,7 +36,7 @@ const Realisations = () => {
                             <p className="card-footer text-center">Site réalisé avec PHP et MySQL</p>
                         </section>
                     </section>
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card" id="akira">
                         <section className="card-body p-0">
                             <img src={japaneseRestaurantImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column align-items-center m-4">
@@ -47,7 +47,7 @@ const Realisations = () => {
                             <p className="card-footer text-center">Site réalisé avec WordPress</p>
                         </section>
                     </section>
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 h-100 card" id="good-space">
                         <section className="card-body p-0">
                             <img src={careSpaceImage} className="card-img-top" alt="..."/>
                             <section className="d-flex flex-column align-items-center m-4">
