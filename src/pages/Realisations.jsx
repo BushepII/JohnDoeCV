@@ -14,7 +14,7 @@ const Realisations = () => {
             <picture>
                 <source srcSet={bannerDesktop} type="image/jpeg" media="(min-width: 992px)" />
                 <source srcSet={bannerTablette} type="image/jpeg" media="(min-width: 768px)" />
-                <img src={bannerMobile} type="image/jpeg" alt="" className="img-fluid banner"/>
+                <img src={bannerMobile} type="image/jpeg" alt="bannière de fond pour introduire la page" className="img-fluid banner"/>
             </picture>
             <section className="container-fluid mt-4" id="realisations">
                 <section className="row text-center">

@@ -21,7 +21,7 @@ const Github = () => {
             <section className="container-fluid d-flex flex-column justify-content-center align-items-center my-5" id="github">
                 <h1 className="pt-5">Github user</h1>
                 <h2>{user.name}</h2>
-                <img src={user.avatar_url} alt="" />
+                <img src={user.avatar_url} alt="Portrait du chat de Github." />
                 <p>{user.bio}</p>
                 <p>Abonnés : {user.followers}</p>
                 <p>Abonnements : {user.following}</p>
