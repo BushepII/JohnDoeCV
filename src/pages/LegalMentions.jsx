@@ -22,7 +22,7 @@ const LegalMentions = () => {
                             <section className="accordion-body">
                                 <h3>John Doe</h3>
                                 <section className="d-flex">
-                                    <img src="src\assets\pictograms\icon_localisation.png" alt="" className="pictogram img-fluid"/>
+                                    <img src="src/assets/pictograms/icon_localisation.png" alt="" className="pictogram img-fluid"/>
                                     <p>
                                         40 Rue Laure Diebold
                                         <br/>
@@ -31,12 +31,12 @@ const LegalMentions = () => {
                                 </section>
 
                                 <section className="d-flex">
-                                    <img src="src\assets\pictograms\icon_phone.png" alt="" className="pictogram img-fluid"/>
+                                    <img src="src/assets/pictograms/icon_phone.png" alt="" className="pictogram img-fluid"/>
                                     <a href="tel:+33620304050">06 20 30 40 50</a>
                                 </section>
 
                                 <section className="d-flex">
-                                    <img src="src\assets\pictograms\icon_mail.png" alt="" className="pictogram img-fluid"/>
+                                    <img src="src/assets/pictograms/icon_mail.png" alt="" className="pictogram img-fluid"/>
                                     <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
                                 </section>
                                     
@@ -58,7 +58,7 @@ const LegalMentions = () => {
                                     75008 Paris
                                 </p>
                                 <section className="d-flex py-3">
-                                    <img src="src\assets\pictograms\icon_world.png" alt="" className="pictogram img-fluid"/>
+                                    <img src="src/assets/pictograms/icon_world.png" alt="" className="pictogram img-fluid"/>
                                     <a href="www.alwaysdata.com" target="_blank">www.alwaysdata.com</a>
                                 </section>
                             </section>
