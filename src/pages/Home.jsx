@@ -17,8 +17,8 @@ const Home = () => {
                 <button type="button" className="btn btn-primary px-4 m-2" onClick={scrollToSection}>En savoir plus</button>
             </section>
 
-            <section className="container my-5" id="about">
-                <section className="row justify-content-center">
+            <div className="container my-5" id="about">
+                <div className="row justify-content-center">
                     <section className="col-12 col-md-6 p-5">
                         <h1>À propos</h1>
                         <hr className="blue-line"/>
@@ -52,8 +52,8 @@ const Home = () => {
                             <div className="progress-bar progress-react"></div>
                         </div>
                     </section>
-                </section>
-            </section>
+                </div>
+            </div>
         </>
     );
 }
