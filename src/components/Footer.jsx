@@ -44,8 +44,8 @@ function Footer() {
   return (
     <>
         <footer className='container-fluid py-4 px-0'>
-            <section className='container-fluid'>
-                <section className='row justify-content-around px-0 py-4'>
+            <div className='container-fluid'>
+                <div className='row justify-content-around px-0 py-4'>
                     <section className='col-12 col-md-5 col-lg-2 pb-2'>
                         <h4>John Doe</h4>
                         <p>40 Rue Laure Diebold<br/>
@@ -106,11 +106,12 @@ function Footer() {
                         </Nav.Item>
                     </section>
 
-                    <section className='col-12 col-md-5 col-lg-2 pb-2'>
+                    <div className='col-12 col-md-5 col-lg-2 pb-2'>
                         <a href="#"><img src={scrolltoTopImage} alt="personnal icon" className='img-fluid imgUp' id='scrollToTopImage'/></a>
-                    </section>
-                </section>
-            </section>
+                    </div>
+                </div>
+            </div>
+            
             <section className='row text-center bg-dark m-0'>
                 <h4 id="copyright" className='p-4 m-0'>&copy; Designed by John Doe</h4>
             </section>
