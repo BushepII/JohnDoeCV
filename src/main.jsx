@@ -8,7 +8,7 @@ import Contact from './pages/Contact.jsx'
 import Blog from './pages/Blog.jsx'
 import Realisations from './pages/Realisations.jsx'
 import Services from './pages/Services.jsx'
-import LegalMentions from './pages/legalMentions.jsx'
+import LegalMentions from './pages/LegalMentions.jsx'
 import GitHub from './pages/GitHub.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 
