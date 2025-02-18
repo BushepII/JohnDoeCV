@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 
 import '../style/components_style/Header.scss';
-
+import scrolltoTopImage from '../assets/apple-touch-icon.png'; 
 
 function Header() {
 
@@ -31,7 +31,7 @@ function Header() {
                 <div className='container-fluid'>
 
                     <Nav.Item>
-                        <Nav.Link href="#" onClick={handleScrollToSection("", "presentation-home")} className='navbar-brand'><img src="src\assets\apple-touch-icon.png" alt="personnal icon" className='header-icon'/></Nav.Link>
+                        <Nav.Link href="#" onClick={handleScrollToSection("", "presentation-home")} className='navbar-brand'><img src={scrolltoTopImage} alt="personnal icon" className='header-icon'/></Nav.Link>
                     </Nav.Item>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
