@@ -13,7 +13,7 @@ const Services = () => {
             <picture>
                 <source srcSet={bannerDesktop} type="image/jpg" media="(min-width: 992px)" />
                 <source srcSet={bannerTablette} type="image/jpg" media="(min-width: 768px)" />
-                <img src={bannerMobile} alt="" className="img-fluid banner" />
+                <img src={bannerMobile} alt="bannière de fond pour introduire la page" className="img-fluid banner" />
             </picture>
             <section className="container-fluid mt-4" id="services">
                 <section className="row text-center">
@@ -26,7 +26,7 @@ const Services = () => {
 
 
                 <section className="row justify-content-evenly m-4">
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card service">
                         <section className="card-body p-0">
                             <img src={computerImage} className="card-img-top img-fluid mx-auto d-block p-4" alt="..."/>
                             <section className="d-flex flex-column justify-content-center align-items-center m-4">
@@ -36,7 +36,7 @@ const Services = () => {
                         </section>
                     </section>
 
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card service">
                         <section className="card-body p-0">
                             <img src={htmlImage} className="card-img-top img-fluid mx-auto d-block p-4" alt="..."/>
                             <section className="d-flex flex-column justify-content-center align-items-center m-4">
@@ -46,7 +46,7 @@ const Services = () => {
                         </section>
                     </section>
 
-                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card">
+                    <section className="col-12 col-md-5 col-lg-3 my-3 m-md-4 p-0 card service">
                         <section className="card-body p-0">
                             <img src={searchImage} className="card-img-top img-fluid mx-auto d-block p-4" alt="..."/>
                             <section className="d-flex flex-column justify-content-center align-items-center m-4">
