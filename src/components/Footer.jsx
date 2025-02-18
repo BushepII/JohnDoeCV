@@ -111,6 +111,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
+            
             <section className='row text-center bg-dark m-0'>
                 <h4 id="copyright" className='p-4 m-0'>&copy; Designed by John Doe</h4>
             </section>
